@@ -1,12 +1,12 @@
 # IB
 
-Problemas:
+## Problemas:
 
   - Hoja1
 
-#### Jutge
+### Jutge:
 
-Curso "Learning to program":
+#### Curso "Learning to program":
 
   - Introduction (Completado 14/10/25) --> Falta cambiar el estilo a la Guía de Estilo de C++ de Google
   - First Loops

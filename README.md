@@ -1,4 +1,9 @@
 # IB
+
+Problemas:
+
+  - Hoja1
+
 # Jutge
 
 Curso "Learning to program":

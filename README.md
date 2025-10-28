@@ -2,7 +2,8 @@
 
 ## Problemas:
 
-  - Hoja1
+  - Primeros programas en C++
+  - Funciones y línea de comandos
 
 ## Jutge:
 

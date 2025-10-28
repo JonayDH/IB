@@ -8,7 +8,7 @@
 
 ### Curso "Learning to program":
 
-  - Introduction (Completado 14/10/25) --> Falta cambiar el estilo a la Guía de Estilo de C++ de Google
+  - Introduction (Completado 14/10/25)
   - First Loops
   - Loops inside loops
   - First procedures

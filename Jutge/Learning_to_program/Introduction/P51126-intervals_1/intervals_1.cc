@@ -4,12 +4,12 @@
   * Grado en Ingeniería Informática
   * Informática Básica 2025-2026
   *
-  * @file rounding.cc
+  * @file intervals_1.cc
   * @author Jonay Déniz Hernández  alu0101791623@ull.edu.es
-  * @date Oct 4 2025
-  * @brief A program that reads a real number x≥0 and prints ⌊ x ⌋ (the floor of x), ⌈ x ⌉ (the ceiling of x), and the rounding of x.
+  * @date Oct 5 2025
+  * @brief A program that, given two intervals, computes the interval corresponding to their intersection, or tells that it is empty.
   * @bug There are no known bugs
-  * @see https://jutge.org/problems/P92613_en
+  * @see https://jutge.org/problems/P51126_en
   *
   * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License
   * as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
@@ -22,15 +22,22 @@
 
 #include <iostream>
 #include <cmath>
-#include <iomanip>
 
 int main() {
 
-  long double x;
+  int x1{0}, y1{0}, x2{0}, y2{0}, min{0}, max{0};
+  std::cin >> x1 >> y1 >> x2 >> y2;
 
-  std::cin >> x;
+  min = std::fmax(x1, x2);
+  max = std::fmin(y1, y2);
 
-  std::cout << std::fixed << std::setprecision(0) << std::floor(x) << " " << std::ceil(x) << " " << std::round(x) << std::endl;
+  if (min <= max) {
+
+    std::cout << "[" << min << "," << max << "]" << std::endl;
+  } else {
+
+    std::cout << "[]" << std::endl;
+  }
 
   return 0;
 }

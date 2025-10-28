@@ -4,12 +4,12 @@
   * Grado en Ingeniería Informática
   * Informática Básica 2025-2026
   *
-  * @file rounding.cc
+  * @file leapyears.cc
   * @author Jonay Déniz Hernández  alu0101791623@ull.edu.es
-  * @date Oct 4 2025
-  * @brief A program that reads a real number x≥0 and prints ⌊ x ⌋ (the floor of x), ⌈ x ⌉ (the ceiling of x), and the rounding of x.
+  * @date Oct 5 2025
+  * @brief A program that tells if a year is or is not a leap year.
   * @bug There are no known bugs
-  * @see https://jutge.org/problems/P92613_en
+  * @see https://jutge.org/problems/P61634_en
   *
   * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License
   * as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
@@ -21,16 +21,33 @@
   */
 
 #include <iostream>
-#include <cmath>
-#include <iomanip>
 
 int main() {
 
-  long double x;
+  int year{0};
+  std::cin >> year;
 
-  std::cin >> x;
+  if ((year % 4) == 0) {
 
-  std::cout << std::fixed << std::setprecision(0) << std::floor(x) << " " << std::ceil(x) << " " << std::round(x) << std::endl;
+    if ((year % 100) == 0) {
+    
+      if ((year % 400) == 0) {
+      
+        std::cout << "YES" << std::endl;
+      } else {
+          
+        std::cout << "NO" << std::endl;
+      }
+
+    } else {
+
+      std::cout << "YES" << std::endl;
+    }
+
+  } else {
+
+    std::cout << "NO" << std::endl;
+  }
 
   return 0;
 }

@@ -38,7 +38,7 @@ int main() {
     numero2 = aux;
    }
 
-  for(int i{numero1}; i >= numero2; i--) {
+  for (int i{numero1}; i >= numero2; i--) {
 
     std::cout << i << std::endl;
   }

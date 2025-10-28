@@ -4,12 +4,12 @@
   * Grado en Ingeniería Informática
   * Informática Básica 2025-2026
   *
-  * @file rounding.cc
+  * @file three_words.cc
   * @author Jonay Déniz Hernández  alu0101791623@ull.edu.es
   * @date Oct 4 2025
-  * @brief A program that reads a real number x≥0 and prints ⌊ x ⌋ (the floor of x), ⌈ x ⌉ (the ceiling of x), and the rounding of x.
+  * @brief A program that reads three words a, b and c, and prints a line with c, b and a in this order.
   * @bug There are no known bugs
-  * @see https://jutge.org/problems/P92613_en
+  * @see https://jutge.org/problems/P62421_en
   *
   * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License
   * as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
@@ -21,16 +21,16 @@
   */
 
 #include <iostream>
-#include <cmath>
-#include <iomanip>
 
 int main() {
 
-  long double x;
+  std::string a{};
+  std::string b{};
+  std::string c{};
 
-  std::cin >> x;
+  std::cin >> a;
+  std::cin >> b;
+  std::cin >> c;
 
-  std::cout << std::fixed << std::setprecision(0) << std::floor(x) << " " << std::ceil(x) << " " << std::round(x) << std::endl;
-
-  return 0;
+  std::cout << c << " " << b << " " << a << std::endl;
 }

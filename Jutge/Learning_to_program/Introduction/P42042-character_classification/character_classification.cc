@@ -4,12 +4,13 @@
   * Grado en Ingeniería Informática
   * Informática Básica 2025-2026
   *
-  * @file rounding.cc
+  * @file character_classification.cc
   * @author Jonay Déniz Hernández  alu0101791623@ull.edu.es
   * @date Oct 4 2025
-  * @brief A program that reads a real number x≥0 and prints ⌊ x ⌋ (the floor of x), ⌈ x ⌉ (the ceiling of x), and the rounding of x.
+  * @brief A program that reads a letter, and that tells if it is an uppercase letter or a lowercase letter, 
+  *        and that also tells if it is a vowel or a consonant.
   * @bug There are no known bugs
-  * @see https://jutge.org/problems/P92613_en
+  * @see https://jutge.org/problems/P42042_en
   *
   * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License
   * as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
@@ -21,16 +22,40 @@
   */
 
 #include <iostream>
-#include <cmath>
-#include <iomanip>
 
 int main() {
 
-  long double x;
+  char caracter{};
 
-  std::cin >> x;
+  std::cin >> caracter;
 
-  std::cout << std::fixed << std::setprecision(0) << std::floor(x) << " " << std::ceil(x) << " " << std::round(x) << std::endl;
+  if (caracter > 'Z') {
 
+    std::cout << "lowercase" << std::endl;
+
+    if (caracter == 'a' ||  caracter == 'e' || caracter == 'i' || caracter == 'o' || caracter == 'u') {
+
+      std::cout << "vowel" << std::endl;
+    
+    } else {
+        
+      std::cout << "consonant" << std::endl;
+    }
+  }
+ 
+  if (caracter <= 'Z') {
+
+    std::cout << "uppercase" << std::endl;
+
+    if (caracter == 'A' || caracter == 'E' || caracter == 'I' || caracter == 'O' || caracter == 'U') {
+
+      std::cout << "vowel" << std::endl;
+    
+    } else {
+        
+      std::cout << "consonant" << std::endl;
+    }
+  }
+  
   return 0;
-}
+} 

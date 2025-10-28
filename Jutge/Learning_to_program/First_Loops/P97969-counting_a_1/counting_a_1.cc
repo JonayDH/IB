@@ -27,7 +27,7 @@ int main() {
   int contador{};
   char caracter_actual{};
 
-  while(std::cin >> caracter_actual) {
+  while (std::cin >> caracter_actual) {
 
     if (caracter_actual == 'a') {
 

@@ -4,12 +4,12 @@
   * Grado en Ingeniería Informática
   * Informática Básica 2025-2026
   *
-  * @file rounding.cc
+  * @file max_of_three_different.cc
   * @author Jonay Déniz Hernández  alu0101791623@ull.edu.es
   * @date Oct 4 2025
-  * @brief A program that reads a real number x≥0 and prints ⌊ x ⌋ (the floor of x), ⌈ x ⌉ (the ceiling of x), and the rounding of x.
+  * @brief A program that reads three numbers, all different, and prints their maximum.
   * @bug There are no known bugs
-  * @see https://jutge.org/problems/P92613_en
+  * @see https://jutge.org/problems/P52847_en
   *
   * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License
   * as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
@@ -22,15 +22,23 @@
 
 #include <iostream>
 #include <cmath>
-#include <iomanip>
 
 int main() {
+  
+  long long int num1{};
+  long long int num2{};
+  long long int num3{};
+  long long int max{};
+  long long int max2{};
 
-  long double x;
+  std::cin >> num1;
+  std::cin >> num2;
+  std::cin >> num3;
 
-  std::cin >> x;
+  max = std::fmax(num1,num2);
+  max2 = std::fmax(max,num3);
 
-  std::cout << std::fixed << std::setprecision(0) << std::floor(x) << " " << std::ceil(x) << " " << std::round(x) << std::endl;
+  std::cout << max2 << std::endl;
 
   return 0;
 }

@@ -40,7 +40,7 @@ int main() {
 
     if (residuo > 9) {
 
-      switch(residuo) {
+      switch (residuo) {
         case 10:
           std::cout << "A";
           break;

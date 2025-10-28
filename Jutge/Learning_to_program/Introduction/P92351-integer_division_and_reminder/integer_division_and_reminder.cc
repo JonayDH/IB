@@ -4,12 +4,13 @@
   * Grado en Ingeniería Informática
   * Informática Básica 2025-2026
   *
-  * @file rounding.cc
+  * @file integer_division_and_reminder.cc
   * @author Jonay Déniz Hernández  alu0101791623@ull.edu.es
   * @date Oct 4 2025
-  * @brief A program that reads a real number x≥0 and prints ⌊ x ⌋ (the floor of x), ⌈ x ⌉ (the ceiling of x), and the rounding of x.
+  * @brief A program that reads an integer number a and a natural number b, with b > 0, and prints
+  *        the integer division d and the remainder r of a divided by b.
   * @bug There are no known bugs
-  * @see https://jutge.org/problems/P92613_en
+  * @see https://jutge.org/problems/P92351_en
   *
   * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License
   * as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
@@ -21,16 +22,30 @@
   */
 
 #include <iostream>
-#include <cmath>
-#include <iomanip>
 
 int main() {
 
-  long double x;
+  int a{};
+  int b{};
+  int resultado{};
+  int resto{};
 
-  std::cin >> x;
+  std::cin >> a;
+  std::cin >> b;
 
-  std::cout << std::fixed << std::setprecision(0) << std::floor(x) << " " << std::ceil(x) << " " << std::round(x) << std::endl;
+  if (b > 0) {
+    
+    resultado = a / b;
+    resto = a % b;
+
+    if (resto < 0) {
+      
+      resto = resto + b;
+      resultado = resultado - 1;
+    }
+
+    std::cout << resultado << " " << resto << std::endl;
+  }
 
   return 0;
 }

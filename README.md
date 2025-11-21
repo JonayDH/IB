@@ -4,6 +4,7 @@
 
   - Primeros programas en C++
   - Funciones y línea de comandos
+  - Ficheros
 
 ## Jutge:
 

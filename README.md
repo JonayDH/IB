@@ -5,13 +5,14 @@
   - Primeros programas en C++
   - Funciones y línea de comandos
   - Ficheros
+  - Clases
 
 ## Jutge:
 
 ### Curso "Learning to program":
 
   - Introduction (Completado 14/10/25)
-  - First Loops
+  - First Loops (Completado 25/11/25)
   - Loops inside loops
   - First procedures
   - Procedures and parameters by reference

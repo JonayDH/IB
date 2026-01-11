@@ -57,3 +57,4 @@ void Elecciones(std::string& fichero) {
     }
   }
 }
+

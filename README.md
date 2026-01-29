@@ -1,5 +1,11 @@
 # IB
 
+## Examenes:
+
+  - Enero (Curso 24/25)
+  - Junio (Curso 24/25)
+  - Julio (Curso 24/25)
+
 ## Problemas:
 
   - Primeros programas en C++

@@ -6,6 +6,10 @@
   - Junio (Curso 24/25)
   - Julio (Curso 24/25)
 
+## Prácticas:
+
+  - Prácticas de la 2 a la 14
+
 ## Problemas:
 
   - Primeros programas en C++

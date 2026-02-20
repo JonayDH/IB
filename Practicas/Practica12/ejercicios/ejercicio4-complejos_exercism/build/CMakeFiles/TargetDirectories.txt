@@ -1,0 +1,4 @@
+/home/usuario/snap/exercism/5/exercism/cpp/complex-numbers/build/CMakeFiles/complex-numbers.dir
+/home/usuario/snap/exercism/5/exercism/cpp/complex-numbers/build/CMakeFiles/test_complex-numbers.dir
+/home/usuario/snap/exercism/5/exercism/cpp/complex-numbers/build/CMakeFiles/edit_cache.dir
+/home/usuario/snap/exercism/5/exercism/cpp/complex-numbers/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,5 @@
+/home/usuario/practicas/p09-functions-JonayDH/fibonacci_sum/build/CMakeFiles/tools.dir
+/home/usuario/practicas/p09-functions-JonayDH/fibonacci_sum/build/CMakeFiles/fibonacci_sum.dir
+/home/usuario/practicas/p09-functions-JonayDH/fibonacci_sum/build/CMakeFiles/doc.dir
+/home/usuario/practicas/p09-functions-JonayDH/fibonacci_sum/build/CMakeFiles/edit_cache.dir
+/home/usuario/practicas/p09-functions-JonayDH/fibonacci_sum/build/CMakeFiles/rebuild_cache.dir

@@ -38,7 +38,7 @@
 
 --- 
 
-## *Descargo de responsabilidad*
+## Descargo de responsabilidad
 
 *Este proyecto se proporciona tal cual, sin garantías de ningún tipo, expresas o implícitas.*
 
